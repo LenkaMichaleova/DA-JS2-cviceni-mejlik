@@ -21,3 +21,14 @@ export const Inbox2 = ({account, messages}) => {
         </div>
     )
 }
+
+export const Inbox3 = ({account, messages}) => {
+    const classMessage = messages !=0 ? "messages unread" : "messages no-unread"
+    const text = messages!=0 ? `Nepřečtených zpráv: ${messages}` : `Žádné nové zprávy`
+    return (
+        <div className="container">
+            <div className="account">{account}</div>
+            <div className={classMessage}>{text}</div> 
+        </div>
+    )
+}

@@ -1,6 +1,5 @@
 import { render } from '@czechitas/render';
-import { Inbox } from '../components/Inbox/Inbox';
-import { Inbox2 } from '../components/Inbox/Inbox';
+import { Inbox, Inbox2, Inbox3 } from '../components/Inbox/Inbox';
 import { Header } from '../components/Header/Header';
 import '../global.css';
 import './index.css';
@@ -13,5 +12,6 @@ document.querySelector('#root').innerHTML = render(
     <Inbox account="radovan.holatko@mejlik.cz" messages={5} />
     <Header user=""/>
     <Inbox2 account="radovan.holatko@mejlik.cz" messages={0} />
+    <Inbox3 account="radovan.holatko@mejlik.cz" messages={3}/>
   </>
 );
